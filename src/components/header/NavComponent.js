@@ -4,10 +4,10 @@ import { NavLink } from 'react-router-dom';
 
 const IconSpan = styled.span`
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     font-size: 1rem;
     color: #84CEEB;
-    padding: 0 0.5rem;
+    padding: 0 7rem;
     margin: 0 auto;
     span {
         padding: 1rem;
