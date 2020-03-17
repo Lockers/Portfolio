@@ -1,20 +1,33 @@
 import React from 'react';
-import './App.css';
-import styled from 'styled-components'
+import { Header } from './components/header/Header';
+import styled from 'styled-components';
+import {Route} from 'react-router-dom';
+import { Home } from './components/home/Home';
+import { About } from './components/about/About';
+import { Contact } from './components/contact/Contact';
 
-const Header = styled.header`
-  color: red;
-  background-color: yellow;
-  
+
+const Grid = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: 1px solid red;
 `
 
-function App() {
+export const App = () => {
   return (
-    <div className="App">
-      <Header className="App-header">
-      </Header>
-    </div>
+    <Grid>
+      <Header />
+      <Route exact path="/">
+        <Home />
+      </Route>
+      <Route exact path="/about">
+        <About />
+      </Route>
+      <Route exact path="/contact">
+        <Contact />
+      </Route>
+    </Grid>
   );
 }
 
-export default App;
