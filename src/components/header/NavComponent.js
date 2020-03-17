@@ -5,9 +5,10 @@ import { NavLink } from 'react-router-dom';
 const IconSpan = styled.span`
     display: flex;
     justify-content: space-evenly;
-    font-size: 4rem;
+    font-size: 1rem;
     color: #84CEEB;
-    padding: 0 2rem;
+    padding: 0 0.5rem;
+    margin: 0 auto;
     span {
         padding: 1rem;
         border: 1px solid blue;
