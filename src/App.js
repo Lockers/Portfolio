@@ -8,6 +8,7 @@ import { Contact } from './components/contact/Contact';
 
 
 const Grid = styled.div`
+  width: 360px;
   display: flex;
   flex-direction: column;
   justify-content: center;
